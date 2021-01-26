@@ -968,7 +968,7 @@ def read_html(
         falls back on ``bs4`` + ``html5lib``.
 
     header : int or list-like, optional
-        The row (or list of rows for a :class:`~my_happy_pandas.MultiIndex`) to use to
+        The row (or list of rows for a :class:`~pandas.MultiIndex`) to use to
         make the columns headers.
 
     index_col : int or list-like, optional

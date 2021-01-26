@@ -2314,7 +2314,7 @@ class Index(IndexOpsMixin, PandasObject):
 
         See Also
         --------
-        Series.duplicated : Equivalent method on pandas.Series.
+        Series.duplicated : Equivalent method on my_happy_pandas.Series.
         DataFrame.duplicated : Equivalent method on pandas.DataFrame.
         Index.drop_duplicates : Remove duplicate values from Index.
 

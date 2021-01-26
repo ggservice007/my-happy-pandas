@@ -117,7 +117,7 @@ def _convert_expression(expr) -> str:
     This function converts an object to an expression (a unicode string) and
     checks to make sure it isn't empty after conversion. This is used to
     convert operators to their string representation for recursive calls to
-    :func:`~my_happy_pandas.eval`.
+    :func:`~pandas.eval`.
 
     Parameters
     ----------
@@ -179,7 +179,7 @@ def eval(
     Additionally, the ``'pandas'`` parser allows the use of :keyword:`and`,
     :keyword:`or`, and :keyword:`not` with the same semantics as the
     corresponding bitwise operators.  :class:`~my_happy_pandas.Series` and
-    :class:`~my_happy_pandas.DataFrame` objects are supported and behave as they would
+    :class:`~pandas.DataFrame` objects are supported and behave as they would
     with plain ol' Python evaluation.
 
     Parameters
@@ -224,7 +224,7 @@ def eval(
         variable lookup. For example, this is used in the
         :meth:`~DataFrame.query` method to inject the
         ``DataFrame.index`` and ``DataFrame.columns``
-        variables that refer to their respective :class:`~my_happy_pandas.DataFrame`
+        variables that refer to their respective :class:`~pandas.DataFrame`
         instance attributes.
     level : int, optional
         The number of prior stack frames to traverse and add to the current

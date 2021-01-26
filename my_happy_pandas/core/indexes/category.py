@@ -641,11 +641,11 @@ class CategoricalIndex(ExtensionIndex, accessor.PandasDelegate):
 
         Maps the values (their categories, not the codes) of the index to new
         categories. If the mapping correspondence is one-to-one the result is a
-        :class:`~my_happy_pandas.CategoricalIndex` which has the same order property as
-        the original, otherwise an :class:`~my_happy_pandas.Index` is returned.
+        :class:`~pandas.CategoricalIndex` which has the same order property as
+        the original, otherwise an :class:`~pandas.Index` is returned.
 
         If a `dict` or :class:`~my_happy_pandas.Series` is used any unmapped category is
-        mapped to `NaN`. Note that if this happens an :class:`~my_happy_pandas.Index`
+        mapped to `NaN`. Note that if this happens an :class:`~pandas.Index`
         will be returned.
 
         Parameters
@@ -661,7 +661,7 @@ class CategoricalIndex(ExtensionIndex, accessor.PandasDelegate):
         See Also
         --------
         Index.map : Apply a mapping correspondence on an
-            :class:`~my_happy_pandas.Index`.
+            :class:`~pandas.Index`.
         Series.map : Apply a mapping correspondence on a
             :class:`~my_happy_pandas.Series`.
         Series.apply : Apply more complex functions on a
@@ -691,13 +691,13 @@ class CategoricalIndex(ExtensionIndex, accessor.PandasDelegate):
         CategoricalIndex([3, 2, 1], categories=[3, 2, 1], ordered=True,
                          dtype='category')
 
-        If the mapping is not one-to-one an :class:`~my_happy_pandas.Index` is returned:
+        If the mapping is not one-to-one an :class:`~pandas.Index` is returned:
 
         >>> idx.map({'a': 'first', 'b': 'second', 'c': 'first'})
         Index(['first', 'second', 'first'], dtype='object')
 
         If a `dict` is used, all unmapped categories are mapped to `NaN` and
-        the result is an :class:`~my_happy_pandas.Index`:
+        the result is an :class:`~pandas.Index`:
 
         >>> idx.map({'a': 'first', 'b': 'second'})
         Index(['first', 'second', nan], dtype='object')

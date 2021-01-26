@@ -1356,7 +1356,7 @@ class GroupBy(_GroupBy[FrameOrSeries]):
 
         Returns
         -------
-        pandas.Series or pandas.DataFrame
+        my_happy_pandas.Series or pandas.DataFrame
         %(see_also)s
         Examples
         --------

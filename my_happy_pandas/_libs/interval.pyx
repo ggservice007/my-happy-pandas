@@ -56,7 +56,7 @@ cdef class IntervalMixin:
         """
         Check if the interval is closed on the left side.
 
-        For the meaning of `closed` and `open` see :class:`~my_happy_pandas.Interval`.
+        For the meaning of `closed` and `open` see :class:`~pandas.Interval`.
 
         Returns
         -------
@@ -70,7 +70,7 @@ cdef class IntervalMixin:
         """
         Check if the interval is closed on the right side.
 
-        For the meaning of `closed` and `open` see :class:`~my_happy_pandas.Interval`.
+        For the meaning of `closed` and `open` see :class:`~pandas.Interval`.
 
         Returns
         -------
@@ -84,7 +84,7 @@ cdef class IntervalMixin:
         """
         Check if the interval is open on the left side.
 
-        For the meaning of `closed` and `open` see :class:`~my_happy_pandas.Interval`.
+        For the meaning of `closed` and `open` see :class:`~pandas.Interval`.
 
         Returns
         -------
@@ -98,7 +98,7 @@ cdef class IntervalMixin:
         """
         Check if the interval is open on the right side.
 
-        For the meaning of `closed` and `open` see :class:`~my_happy_pandas.Interval`.
+        For the meaning of `closed` and `open` see :class:`~pandas.Interval`.
 
         Returns
         -------

@@ -1,5 +1,5 @@
 """
-Engine classes for :func:`~my_happy_pandas.eval`
+Engine classes for :func:`~pandas.eval`
 """
 
 import abc

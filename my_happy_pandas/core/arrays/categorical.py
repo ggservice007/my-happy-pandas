@@ -434,7 +434,7 @@ class Categorical(NDArrayBackedExtensionArray, PandasObject):
     @property
     def dtype(self) -> CategoricalDtype:
         """
-        The :class:`~my_happy_pandas.api.types.CategoricalDtype` for this instance.
+        The :class:`~pandas.api.types.CategoricalDtype` for this instance.
         """
         return self._dtype
 
@@ -1097,12 +1097,12 @@ class Categorical(NDArrayBackedExtensionArray, PandasObject):
         Map categories using input correspondence (dict, Series, or function).
 
         Maps the categories to new categories. If the mapping correspondence is
-        one-to-one the result is a :class:`~my_happy_pandas.Categorical` which has the
-        same order property as the original, otherwise a :class:`~my_happy_pandas.Index`
+        one-to-one the result is a :class:`~pandas.Categorical` which has the
+        same order property as the original, otherwise a :class:`~pandas.Index`
         is returned. NaN values are unaffected.
 
         If a `dict` or :class:`~my_happy_pandas.Series` is used any unmapped category is
-        mapped to `NaN`. Note that if this happens an :class:`~my_happy_pandas.Index`
+        mapped to `NaN`. Note that if this happens an :class:`~pandas.Index`
         will be returned.
 
         Parameters
@@ -1118,9 +1118,9 @@ class Categorical(NDArrayBackedExtensionArray, PandasObject):
         See Also
         --------
         CategoricalIndex.map : Apply a mapping correspondence on a
-            :class:`~my_happy_pandas.CategoricalIndex`.
+            :class:`~pandas.CategoricalIndex`.
         Index.map : Apply a mapping correspondence on an
-            :class:`~my_happy_pandas.Index`.
+            :class:`~pandas.Index`.
         Series.map : Apply a mapping correspondence on a
             :class:`~my_happy_pandas.Series`.
         Series.apply : Apply more complex functions on a
@@ -1150,13 +1150,13 @@ class Categorical(NDArrayBackedExtensionArray, PandasObject):
         [3, 2, 1]
         Categories (3, int64): [3 < 2 < 1]
 
-        If the mapping is not one-to-one an :class:`~my_happy_pandas.Index` is returned:
+        If the mapping is not one-to-one an :class:`~pandas.Index` is returned:
 
         >>> cat.map({'a': 'first', 'b': 'second', 'c': 'first'})
         Index(['first', 'second', 'first'], dtype='object')
 
         If a `dict` is used, all unmapped categories are mapped to `NaN` and
-        the result is an :class:`~my_happy_pandas.Index`:
+        the result is an :class:`~pandas.Index`:
 
         >>> cat.map({'a': 'first', 'b': 'second'})
         Index(['first', 'second', nan], dtype='object')
@@ -2340,7 +2340,7 @@ class Categorical(NDArrayBackedExtensionArray, PandasObject):
 
         See Also
         --------
-        pandas.Series.isin : Equivalent method on Series.
+        my_happy_pandas.Series.isin : Equivalent method on Series.
 
         Examples
         --------

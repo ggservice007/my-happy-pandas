@@ -29,14 +29,14 @@ but some parameters may be unified and added to the signature in the
 future (e.g. `title` which should be useful for any backend).
 
 Currently, all the Matplotlib functions in pandas are accessed through
-the selected backend. For example, `my_happy_pandas.plotting.boxplot` (equivalent
+the selected backend. For example, `pandas.plotting.boxplot` (equivalent
 to `DataFrame.boxplot`) is also accessed in the selected backend. This
 is expected to change, and the exact API is under discussion. But with
 the current version, backends are expected to implement the next functions:
 
 - plot (describe above, used for `Series.plot` and `DataFrame.plot`)
 - hist_series and hist_frame (for `Series.hist` and `DataFrame.hist`)
-- boxplot (`my_happy_pandas.plotting.boxplot(df)` equivalent to `DataFrame.boxplot`)
+- boxplot (`pandas.plotting.boxplot(df)` equivalent to `DataFrame.boxplot`)
 - boxplot_frame and boxplot_frame_groupby
 - register and deregister (register converters for the tick formats)
 - Plots not called as `Series` and `DataFrame` methods:

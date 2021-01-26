@@ -3251,7 +3251,7 @@ class DataFrame(NDFrame):
         This method uses the top-level :func:`eval` function to
         evaluate the passed query.
 
-        The :meth:`~my_happy_pandas.DataFrame.query` method uses a slightly
+        The :meth:`~pandas.DataFrame.query` method uses a slightly
         modified Python syntax by default. For example, the ``&`` and ``|``
         (bitwise) operators have the precedence of their boolean cousins,
         :keyword:`and` and :keyword:`or`. This *is* syntactically valid Python,
@@ -3266,7 +3266,7 @@ class DataFrame(NDFrame):
 
         The :attr:`DataFrame.index` and
         :attr:`DataFrame.columns` attributes of the
-        :class:`~my_happy_pandas.DataFrame` instance are placed in the query namespace
+        :class:`~pandas.DataFrame` instance are placed in the query namespace
         by default, which allows you to treat both the index and columns of the
         frame as a column in the frame.
         The identifier ``index`` is used for the frame index; you can also
@@ -3375,7 +3375,7 @@ class DataFrame(NDFrame):
         **kwargs
             See the documentation for :func:`eval` for complete details
             on the keyword arguments accepted by
-            :meth:`~my_happy_pandas.DataFrame.query`.
+            :meth:`~pandas.DataFrame.query`.
 
         Returns
         -------

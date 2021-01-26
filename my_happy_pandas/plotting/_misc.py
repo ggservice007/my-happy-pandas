@@ -293,7 +293,7 @@ def bootstrap_plot(series, fig=None, size=50, samples=500, **kwds):
 
     Parameters
     ----------
-    series : pandas.Series
+    series : my_happy_pandas.Series
         Series from where to get the samplings for the bootstrapping.
     fig : matplotlib.figure.Figure, default None
         If given, it will use the `fig` reference for plotting instead of

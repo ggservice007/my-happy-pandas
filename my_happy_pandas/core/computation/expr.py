@@ -1,5 +1,5 @@
 """
-:func:`~my_happy_pandas.eval` parsers.
+:func:`~pandas.eval` parsers.
 """
 
 import ast

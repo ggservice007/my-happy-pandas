@@ -156,7 +156,7 @@ void *initObjToJSON(void) {
 
     PyDateTime_IMPORT;
 
-    mod_pandas = PyImport_ImportModule("pandas");
+    mod_pandas = PyImport_ImportModule("my_happy_pandas");
     if (mod_pandas) {
         cls_dataframe =
             (PyTypeObject *)PyObject_GetAttrString(mod_pandas, "DataFrame");
@@ -166,14 +166,14 @@ void *initObjToJSON(void) {
         Py_DECREF(mod_pandas);
     }
 
-    mod_nattype = PyImport_ImportModule("pandas._libs.tslibs.nattype");
+    mod_nattype = PyImport_ImportModule("my_happy_pandas._libs.tslibs.nattype");
     if (mod_nattype) {
         cls_nat =
             (PyTypeObject *)PyObject_GetAttrString(mod_nattype, "NaTType");
         Py_DECREF(mod_nattype);
     }
 
-    mod_natype = PyImport_ImportModule("pandas._libs.missing");
+    mod_natype = PyImport_ImportModule("my_happy_pandas._libs.missing");
     if (mod_natype) {
         cls_na = (PyTypeObject *)PyObject_GetAttrString(mod_natype, "NAType");
         Py_DECREF(mod_natype);

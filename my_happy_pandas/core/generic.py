@@ -5361,7 +5361,7 @@ class NDFrame(PandasObject, SelectionMixin, indexing.IndexingMixin):
 
         Returns
         -------
-        pandas.Series
+        my_happy_pandas.Series
             The data type of each column.
 
         Examples
@@ -6902,7 +6902,7 @@ class NDFrame(PandasObject, SelectionMixin, indexing.IndexingMixin):
 
         The last row (for each element in `where`, if list) without any
         NaN is taken.
-        In case of a :class:`~my_happy_pandas.DataFrame`, the last row without NaN
+        In case of a :class:`~pandas.DataFrame`, the last row without NaN
         considering only the subset of columns (if not `None`)
 
         If there is no good value, NaN is returned for a Series or

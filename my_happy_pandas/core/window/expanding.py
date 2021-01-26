@@ -90,7 +90,7 @@ class Expanding(_Rolling_and_Expanding):
     See Also
     --------
     pandas.DataFrame.aggregate : Similar DataFrame method.
-    pandas.Series.aggregate : Similar Series method.
+    my_happy_pandas.Series.aggregate : Similar Series method.
     """
     )
 

@@ -390,7 +390,7 @@ class Registry:
 
     * Series and Index constructors
     * :meth:`pandas.array`
-    * :meth:`pandas.Series.astype`
+    * :meth:`my_happy_pandas.Series.astype`
 
     Multiple extension types can be registered.
     These are tried in order.

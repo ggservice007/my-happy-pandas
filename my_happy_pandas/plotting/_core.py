@@ -1758,7 +1758,7 @@ def _find_backend(backend: str):
 
 def _get_plot_backend(backend=None):
     """
-    Return the plotting backend to use (e.g. `my_happy_pandas.plotting._matplotlib`).
+    Return the plotting backend to use (e.g. `pandas.plotting._matplotlib`).
 
     The plotting system of pandas has been using matplotlib, but the idea here
     is that it can also work with other third-party backends. In the future,

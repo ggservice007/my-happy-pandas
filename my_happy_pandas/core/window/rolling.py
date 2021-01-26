@@ -624,7 +624,7 @@ class _Window(PandasObject, ShallowMixin, SelectionMixin):
 
     See Also
     --------
-    pandas.Series.sum : Reducing sum for Series.
+    my_happy_pandas.Series.sum : Reducing sum for Series.
     pandas.DataFrame.sum : Reducing sum for DataFrame.
 
     Examples
@@ -702,9 +702,9 @@ class _Window(PandasObject, ShallowMixin, SelectionMixin):
 
     See Also
     --------
-    pandas.Series.%(name)s : Calling object with Series data.
+    my_happy_pandas.Series.%(name)s : Calling object with Series data.
     pandas.DataFrame.%(name)s : Calling object with DataFrames.
-    pandas.Series.mean : Equivalent method for Series.
+    my_happy_pandas.Series.mean : Equivalent method for Series.
     pandas.DataFrame.mean : Equivalent method for DataFrame.
 
     Examples
@@ -751,9 +751,9 @@ class _Window(PandasObject, ShallowMixin, SelectionMixin):
 
     See Also
     --------
-    pandas.Series.%(name)s : Calling object with Series data.
+    my_happy_pandas.Series.%(name)s : Calling object with Series data.
     pandas.DataFrame.%(name)s : Calling object with DataFrames.
-    pandas.Series.var : Equivalent method for Series.
+    my_happy_pandas.Series.var : Equivalent method for Series.
     pandas.DataFrame.var : Equivalent method for DataFrame.
     numpy.var : Equivalent method for Numpy array.
 
@@ -811,9 +811,9 @@ class _Window(PandasObject, ShallowMixin, SelectionMixin):
 
     See Also
     --------
-    pandas.Series.%(name)s : Calling object with Series data.
+    my_happy_pandas.Series.%(name)s : Calling object with Series data.
     pandas.DataFrame.%(name)s : Calling object with DataFrames.
-    pandas.Series.std : Equivalent method for Series.
+    my_happy_pandas.Series.std : Equivalent method for Series.
     pandas.DataFrame.std : Equivalent method for DataFrame.
     numpy.std : Equivalent method for Numpy array.
 
@@ -1129,7 +1129,7 @@ class Window(_Window):
     See Also
     --------
     pandas.DataFrame.aggregate : Similar DataFrame method.
-    pandas.Series.aggregate : Similar Series method.
+    my_happy_pandas.Series.aggregate : Similar Series method.
     """
     )
 
@@ -1229,7 +1229,7 @@ class _Rolling_and_Expanding(_Rolling):
 
     See Also
     --------
-    pandas.Series.%(name)s : Calling object with Series data.
+    my_happy_pandas.Series.%(name)s : Calling object with Series data.
     pandas.DataFrame.%(name)s : Calling object with DataFrames.
     pandas.DataFrame.count : Count of the full DataFrame.
 
@@ -1328,9 +1328,9 @@ class _Rolling_and_Expanding(_Rolling):
 
     See Also
     --------
-    pandas.Series.%(name)s : Calling object with Series data.
+    my_happy_pandas.Series.%(name)s : Calling object with Series data.
     pandas.DataFrame.%(name)s : Calling object with DataFrame data.
-    pandas.Series.apply : Similar method for Series.
+    my_happy_pandas.Series.apply : Similar method for Series.
     pandas.DataFrame.apply : Similar method for DataFrame.
 
     Notes
@@ -1457,9 +1457,9 @@ class _Rolling_and_Expanding(_Rolling):
 
     See Also
     --------
-    pandas.Series.%(name)s : Calling object with a Series.
+    my_happy_pandas.Series.%(name)s : Calling object with a Series.
     pandas.DataFrame.%(name)s : Calling object with a DataFrame.
-    pandas.Series.min : Similar method for Series.
+    my_happy_pandas.Series.min : Similar method for Series.
     pandas.DataFrame.min : Similar method for DataFrame.
 
     Examples
@@ -1504,9 +1504,9 @@ class _Rolling_and_Expanding(_Rolling):
 
     See Also
     --------
-    pandas.Series.%(name)s : Calling object with Series data.
+    my_happy_pandas.Series.%(name)s : Calling object with Series data.
     pandas.DataFrame.%(name)s : Calling object with DataFrames.
-    pandas.Series.median : Equivalent method for Series.
+    my_happy_pandas.Series.median : Equivalent method for Series.
     pandas.DataFrame.median : Equivalent method for DataFrame.
 
     Examples
@@ -1603,9 +1603,9 @@ class _Rolling_and_Expanding(_Rolling):
 
     See Also
     --------
-    pandas.Series.%(name)s : Calling object with Series data.
+    my_happy_pandas.Series.%(name)s : Calling object with Series data.
     pandas.DataFrame.%(name)s : Calling object with DataFrames.
-    pandas.Series.kurt : Equivalent method for Series.
+    my_happy_pandas.Series.kurt : Equivalent method for Series.
     pandas.DataFrame.kurt : Equivalent method for DataFrame.
     scipy.stats.skew : Third moment of a probability density.
     scipy.stats.kurtosis : Reference SciPy method.
@@ -1659,7 +1659,7 @@ class _Rolling_and_Expanding(_Rolling):
 
     See Also
     --------
-    pandas.Series.quantile : Computes value at the given quantile over all data
+    my_happy_pandas.Series.quantile : Computes value at the given quantile over all data
         in Series.
     pandas.DataFrame.quantile : Computes values at the given quantile over
         requested axis in DataFrame.
@@ -1788,9 +1788,9 @@ class _Rolling_and_Expanding(_Rolling):
 
     See Also
     --------
-    pandas.Series.%(name)s : Calling object with Series data.
+    my_happy_pandas.Series.%(name)s : Calling object with Series data.
     pandas.DataFrame.%(name)s : Calling object with DataFrames.
-    pandas.Series.corr : Equivalent method for Series.
+    my_happy_pandas.Series.corr : Equivalent method for Series.
     pandas.DataFrame.corr : Equivalent method for DataFrame.
     cov : Similar method to calculate covariance.
     numpy.corrcoef : NumPy Pearson's correlation calculation.
@@ -1801,7 +1801,7 @@ class _Rolling_and_Expanding(_Rolling):
     (https://en.wikipedia.org/wiki/Pearson_correlation_coefficient).
 
     When `other` is not specified, the output will be self correlation (e.g.
-    all 1's), except for :class:`~my_happy_pandas.DataFrame` inputs with `pairwise`
+    all 1's), except for :class:`~pandas.DataFrame` inputs with `pairwise`
     set to `True`.
 
     Function will return ``NaN`` for correlations of equal valued sequences;
@@ -1995,7 +1995,7 @@ class Rolling(_Rolling_and_Expanding):
         """
     See Also
     --------
-    pandas.Series.rolling : Calling object with Series data.
+    my_happy_pandas.Series.rolling : Calling object with Series data.
     pandas.DataFrame.rolling : Calling object with DataFrame data.
     """
     )

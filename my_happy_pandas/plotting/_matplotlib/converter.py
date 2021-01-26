@@ -101,7 +101,7 @@ def register():
 
 
 def deregister():
-    # Renamed in pandas.plotting.__init__
+    # Renamed in my_happy_pandas.plotting.__init__
     for type_, cls in get_pairs():
         # We use type to catch our classes directly, no inheritance
         if type(units.registry.get(type_)) is cls:
