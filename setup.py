@@ -116,95 +116,20 @@ class build_ext(_build_ext):
         super().build_extensions()
 
 
-DESCRIPTION = "Powerful data structures for data analysis, time series, and statistics"
+DESCRIPTION = "It is just for my-happy-modin. "
 LONG_DESCRIPTION = """
-**my_happy_pandas** is a Python package that provides fast, flexible, and expressive data
-structures designed to make working with structured (tabular, multidimensional,
-potentially heterogeneous) and time series data both easy and intuitive. It
-aims to be the fundamental high-level building block for doing practical,
-**real world** data analysis in Python. Additionally, it has the broader goal
-of becoming **the most powerful and flexible open source data analysis /
-manipulation tool available in any language**. It is already well on its way
-toward this goal.
+This project is based on pandas-1.1.5 and is mainly used for my-happy-modin.
+The original modin is only for pandas-1.1.5.
+After use my-happy-pandas you can use any version of pandas.
 
-my_happy_pandas is well suited for many different kinds of data:
-
-  - Tabular data with heterogeneously-typed columns, as in an SQL table or
-    Excel spreadsheet
-  - Ordered and unordered (not necessarily fixed-frequency) time series data.
-  - Arbitrary matrix data (homogeneously typed or heterogeneous) with row and
-    column labels
-  - Any other form of observational / statistical data sets. The data actually
-    need not be labeled at all to be placed into a my_happy_pandas data structure
-
-The two primary data structures of my_happy_pandas, Series (1-dimensional) and DataFrame
-(2-dimensional), handle the vast majority of typical use cases in finance,
-statistics, social science, and many areas of engineering. For R users,
-DataFrame provides everything that R's ``data.frame`` provides and much
-more. my_happy_pandas is built on top of `NumPy <https://www.numpy.org>`__ and is
-intended to integrate well within a scientific computing environment with many
-other 3rd party libraries.
-
-Here are just a few of the things that my_happy_pandas does well:
-
-  - Easy handling of **missing data** (represented as NaN) in floating point as
-    well as non-floating point data
-  - Size mutability: columns can be **inserted and deleted** from DataFrame and
-    higher dimensional objects
-  - Automatic and explicit **data alignment**: objects can be explicitly
-    aligned to a set of labels, or the user can simply ignore the labels and
-    let `Series`, `DataFrame`, etc. automatically align the data for you in
-    computations
-  - Powerful, flexible **group by** functionality to perform
-    split-apply-combine operations on data sets, for both aggregating and
-    transforming data
-  - Make it **easy to convert** ragged, differently-indexed data in other
-    Python and NumPy data structures into DataFrame objects
-  - Intelligent label-based **slicing**, **fancy indexing**, and **subsetting**
-    of large data sets
-  - Intuitive **merging** and **joining** data sets
-  - Flexible **reshaping** and pivoting of data sets
-  - **Hierarchical** labeling of axes (possible to have multiple labels per
-    tick)
-  - Robust IO tools for loading data from **flat files** (CSV and delimited),
-    Excel files, databases, and saving / loading data from the ultrafast **HDF5
-    format**
-  - **Time series**-specific functionality: date range generation and frequency
-    conversion, moving window statistics, date shifting and lagging.
-
-Many of these principles are here to address the shortcomings frequently
-experienced using other languages / scientific research environments. For data
-scientists, working with data is typically divided into multiple stages:
-munging and cleaning data, analyzing / modeling it, then organizing the results
-of the analysis into a form suitable for plotting or tabular display. my_happy_pandas is
-the ideal tool for all of these tasks.
+https://github.com/pandas-dev/pandas/releases/tag/v1.1.5
 """
 
 DISTNAME = "my_happy_pandas"
-LICENSE = "BSD"
-AUTHOR = "The PyData Development Team"
-EMAIL = "pydata@googlegroups.com"
-URL = "https://my_happy_pandas.pydata.org"
-DOWNLOAD_URL = ""
-PROJECT_URLS = {
-    "Bug Tracker": "https://github.com/my_happy_pandas-dev/my_happy_pandas/issues",
-    "Documentation": "https://my_happy_pandas.pydata.org/my_happy_pandas-docs/stable/",
-    "Source Code": "https://github.com/my_happy_pandas-dev/my_happy_pandas",
-}
-CLASSIFIERS = [
-    "Development Status :: 5 - Production/Stable",
-    "Environment :: Console",
-    "Operating System :: OS Independent",
-    "Intended Audience :: Science/Research",
-    "Programming Language :: Python",
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.6",
-    "Programming Language :: Python :: 3.7",
-    "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Cython",
-    "Topic :: Scientific/Engineering",
-]
+LICENSE = "Apache 2"
+AUTHOR = "ggservice007"
+EMAIL = "ggservice007@126.com"
+URL = "https://github.com/ggservice007/my-happy-pandas"
 
 
 class CleanCommand(Command):
@@ -767,11 +692,7 @@ def setup_package():
         license=LICENSE,
         cmdclass=cmdclass,
         url=URL,
-        download_url=DOWNLOAD_URL,
-        project_urls=PROJECT_URLS,
         long_description=LONG_DESCRIPTION,
-        classifiers=CLASSIFIERS,
-        platforms="any",
         python_requires=">=3.7.7",
         extras_require={
             "test": [
